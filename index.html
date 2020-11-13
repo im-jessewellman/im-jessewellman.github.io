@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header id="header">
+            <h1 class="h1-font">Jesse Wellman</h1>
+            <h3>Front End Web Developer</h3>
+          
+          </header>
+          <div class="about">
+            <h2 class="about-me">About: </h2>
+            
+            <h4 class="about-me2"> Welcome! I'm Jesse, a web developer based in Las Vegas,NV. Self-taught web developer, seeking to change careers from sales.</h4>
+          </div>
+          <main>
+          
+            <div class="projects">
+              <div class="project-tile">
+                <a target="_blank" href="https://productlanding-page.netlify.app/">
+                  <h4>Landing Page</h4>
+                  <img src="fcc_landingpage.png">
+                </a><br/><br/>
+                <a target="_blank" href="https://github.com/im-jessewellman/landingpage-project"><i class="fab fa-github"></i> View Code</a>
+              </div>
+              <div class="project-tile">
+                <a target="_blank" href="https://brave-cori-65e6dd.netlify.app/">
+                  <h4>Portfolio</h4>
+                  <img src="portfoliopage.png">
+                </a><br/><br/>
+                <a target="_blank" href="https://github.com/im-jessewellman/portfoliov1"><i class="fab fa-github"></i> View Code</a>
+              </div>
+          
+            </div>
+          </main>
+
+          <form id="form" name="submit-to-google-sheet">
+            <h1>Contact:</h1>
+           
+            <label>Name:</br> <input type="text" name="name" placeholder="Your Name"> </label>
+            </br>
+            <label>Phone #:</br> <input type="tel" name="phone" placeholder="Your Phone #"> </label>
+            </br>
+            <label>Email:</br>
+              <input id="email" type="email" name="email" placeholder="youremailaddress@dot.com"></label>
+            </br>
+            <label>Message:</br> <textarea name="message"></textarea> </label>
+            </br>
+           
+            <input id="submit" type="submit" ><br/>
+            Don't worry, once clicked form submits to my Google Sheets once submitted!
+          </form>
+
+          <footer>
+            <a class="social-links" target="_blank" href="https://github.com/im-jessewellman"><i class="fab fa-github-square"></i> Github Profile</a>
+            <a class="social-links" target="_blank" href="Jesse-Wellman.pdf""><i class="fas fa-file-pdf"></i> View Resume</a>
+          </footer>
+        
+
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbw-cPl7JcAXUle712KgQajUiE5BlEEAlCMh3omwBwr9Y47v_8U/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+          
+        
+    </body>
+</html>
