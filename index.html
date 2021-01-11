@@ -1,71 +1,126 @@
 <!DOCTYPE html>
+
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header id="header">
-            <h1 class="h1-font">Jesse Wellman</h1>
-            <h3>Front End Web Developer</h3>
-          
-          </header>
-          <div class="about">
-            <h2 class="about-me">About: </h2>
-            
-            <h4 class="about-me2"> Welcome! I'm Jesse, a web developer based in Las Vegas,NV. Self-taught web developer, seeking to change careers from sales.</h4>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Jesse Wellman Portfolio</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body class="container mx-auto">
+  <style type="text/css">
+    #welcome-section {
+      background-image: url("escanaba.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+  <nav id="navbar" class="sticky top-0 sm:bg-black">
+    <a href="#navbar"><img class="w-full  sm:w-1/4  sm:mx-auto " src="jesse_logo.png" alt="Jesse's Logo"></a>
+    <div class="flex flex-col sm:flex-row">
+      <a class="w-full text-center bg-white border-blue-500 hover:bg-gray-300 border-2 border-solid hover:border-black"
+        href="#welcome-section">Home</a>
+      <a class="w-full text-center bg-white border-blue-500 hover:bg-gray-300 border-2 border-solid hover:border-black"
+        href="#projects">Projects</a>
+      <a class="w-full text-center bg-white border-blue-500 hover:bg-gray-300 border-2 border-solid hover:border-black"
+        href="#footer">Contact</a>
+    </div>
+  </nav>
+
+  <div id="welcome-section" class="h-screen flex items-center justify-center">
+    <h1 class="text-3xl sd:text-4xl text-center">Front End Web Developer</h1>
+
+
+  </div>
+
+  <div id="projects" class="flex flex-row grid sm:grid-cols-4">
+
+
+    <a target="_blank" href="https://product-landing-page1.netlify.app">
+      <div class="flex justify-center mx-10 mt-20">
+        <div class="project-tile max-w-xs rounded shadow-lg my-2 border-4 border-blue-500">
+          <img class="w-full border-2 border-indigo-700" src="landing page project img.png">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Tailwind CSS Page</div>
+
           </div>
-          <main>
-          
-            <div class="projects">
-              <div class="project-tile">
-                <a target="_blank" href="https://productlanding-page.netlify.app/">
-                  <h4>Landing Page</h4>
-                  <img src="fcc_landingpage.png">
-                </a><br/><br/>
-                <a target="_blank" href="https://github.com/im-jessewellman/landingpage-project"><i class="fab fa-github"></i> View Code</a>
-              </div>
-              <div class="project-tile">
-                <a target="_blank" href="https://brave-cori-65e6dd.netlify.app/">
-                  <h4>Portfolio</h4>
-                  <img src="portfoliopage.png">
-                </a><br/><br/>
-                <a target="_blank" href="https://github.com/im-jessewellman/portfoliov1"><i class="fab fa-github"></i> View Code</a>
-              </div>
-          
-            </div>
-          </main>
+        </div>
+      </div>
+    </a>
 
-          <form id="form" action="https://formspree.io/f/xpzollyg" method="POST">
-            <h1>Contact:</h1>
-           
-            <label>Name:</br> <input type="text" name="name" placeholder="Your Name"> </label>
-            </br>
-            <label>Phone #:</br> <input type="tel" name="phone" placeholder="Your Phone #"> </label>
-            </br>
-            <label>Email:</br>
-              <input id="email" type="email" name="_replyto" placeholder="youremailaddress@dot.com"></label>
-            </br>
-            <label>Message:</br> <textarea name="message"></textarea> </label>
-            </br>
-           
-            <input id="submit" type="submit" value="Send" ><br/>
-          
-          </form>
+    <a target="_blank" href="https://surveyform-page.netlify.app">
+      <div class="project-tile flex justify-center mx-10 mt-20">
+        <div class="max-w-xs rounded shadow-lg my-2 border-4 border-blue-500">
+          <img class="w-full border-2 border-indigo-700" src="survey-form-page.png">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Survey Form Page</div>
 
-          <footer>
-            <a class="social-links" target="_blank" href="https://github.com/im-jessewellman"><i class="fab fa-github-square"></i> Github Profile</a>
-            <a class="social-links" target="_blank" href="Jesse-Wellman (1).pdf"><i class="fas fa-file-pdf"></i> View Resume</a>
-          </footer>
-        
+          </div>
+        </div>
+      </div>
+    </a>
+    <a target="_blank" href="https://brave-cori-65e6dd.netlify.app">
+      <div class="project-tile flex justify-center mx-10 mt-20 ">
+        <div class="max-w-xs rounded shadow-lg my-2 border-4 border-blue-500">
+          <img class="w-full border-2 border-indigo-700" src="portfoliopage.png">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Portfolio Page</div>
 
-          
-          
-        
-    </body>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a target="_blank" href="https://productlanding-page.netlify.app">
+      <div class="project-tile flex justify-center mx-10 mt-20 ">
+        <div class="max-w-xs rounded shadow-lg my-2 border-4 border-blue-500">
+          <img class="w-full border-2 border-indigo-700" src="fcc_landingpage.png">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Landing Page</div>
+
+          </div>
+        </div>
+      </div>
+    </a>
+
+  </div>
+  <div class="flex align-center my-8">
+    <form class="flex align-center flex-col mx-auto text-center" name="contact" method="POST" data-netlify="true">
+      <p>
+        <label>Your Name: </br><input class="border-gray-700 border-2 my-4" type="text" name="name" /></label>
+      </p>
+      <p>
+        <label>Your Email: </br><input class="border-gray-700 border-2 my-4" type="email" name="email" /></label>
+      </p>
+      <p>
+        <label>Message: </br> <textarea class="border-gray-700 border-2 my-4 px-4" name="message"></textarea></label>
+      </p>
+      <p>
+        <button
+          class="w-1/2 text-center bg-white border-blue-500 hover:bg-gray-300 border-2 border-solid hover:border-black"
+          type="submit">Send</button>
+      </p>
+    </form>
+  </div>
+
+
+
+
+  <footer id="footer" class="flex flex-col">
+    <a class="w-full text-center bg-white border-blue-500 hover:bg-gray-300 border-2 border-solid hover:border-black"
+      id=" profile-link" target="_blank" href="https://github.com/im-jessewellman">Github Profile</a>
+  </footer>
+
+
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+  </script>
+</body>
+
 </html>
