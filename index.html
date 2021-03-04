@@ -5,121 +5,107 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Jesse Wellman Portfolio</title>
+  <title>Wellman Jesse, Portfolio</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
 </head>
 
-
-<body class="container mx-auto">
-  <style type="text/css">
-    #welcome-section {
-      background-image: url("escanaba.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  </style>
-  <nav id="navbar" class="sticky top-0 sm:bg-black">
-    <a href="#navbar"><img class="w-full  sm:w-1/4  sm:mx-auto " src="jesse_logo.png" alt="Jesse's Logo"></a>
-    <div class="flex flex-col sm:flex-row">
-      <a class="w-full text-center bg-white border-blue-500 hover:bg-gray-300 border-2 border-solid hover:border-black"
-        href="#welcome-section">Home</a>
-      <a class="w-full text-center bg-white border-blue-500 hover:bg-gray-300 border-2 border-solid hover:border-black"
-        href="#projects">Projects</a>
-      <a class="w-full text-center bg-white border-blue-500 hover:bg-gray-300 border-2 border-solid hover:border-black"
-        href="#footer">Contact</a>
-    </div>
+<body>
+  <nav>
+    <a href="#home"><span class="desktoplink">Home </span><i class="fas fa-home"></i></a>
+    <a href="#projects"><span class="desktoplink">Projects </span><i class="fas fa-cog"></i></a>
+    <a href="#about"><span class="desktoplink">About </span><i class="fas fa-user"></i></a>
+    <a href="#contact"><span class="desktoplink">Contact </span><i class="fas fa-envelope"></i></a>
   </nav>
 
-  <div id="welcome-section" class="h-screen flex items-center justify-center">
-    <h1 class="text-3xl sd:text-4xl text-center">Front End Web Developer</h1>
+  <div id="home" class="hero-image">
+    <div class="hero-text">
+      <h1>Jesse Wellman</h1>
+      <p>Front End Web Developer</p>
 
+    </div>
+  </div>
+
+  <main id="projects">
+    <h1 class="project-header">Things I've Built</h1>
+    <div class="project">
+      <div class="project-text ">
+        <div class="card">
+          <h3 class="header-font">Survey Form</h3>
+          <p>HTML5 Form: Inspired by the Mcdonalds survey form, from their receipt.</p>
+        </div>
+      </div>
+      <div class="project-text">
+        <img class="survey-form-img card" src="surveyform project.gif" alt="survey-html5-form-project">
+      </div>
+
+    </div>
+
+    <div class="project">
+      <div class="project-text ">
+        <div class="card">
+          <h3 class="header-font">Landing Page</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dignissimos provident inventore
+            assumenda
+            libero accusantium ratione vero ducimus dicta quidem natus consequatur itaque sapiente
+            consectetur soluta,
+            neque explicabo sequi? Enim!</p>
+        </div>
+      </div>
+      <div class="project-text">
+        <img class="survey-form-img card" src="landingpage project.gif" alt="landingpage-project">
+      </div>
+
+    </div>
+
+
+    </div>
+
+  </main>
+  <h2 class="header-font">About: </h2>
+  <div id="about">
+
+    <div class="aboutme">
+      <p>Hey! My name is Jesse Wellman, based out of Escanaba Michigan. Self-taught Front End Web Developer
+        skilled in
+        HTML5, CSS3 and vanilla JavaScript. Seeking career change into web development.</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum nostrum ratione aperiam labore provident
+        quas
+        vitae, perspiciatis ipsum doloribus cumque voluptates? Voluptatem eligendi eius repudiandae esse illum
+        perspiciatis, ipsam odio.</p>
+
+    </div>
+  </div>
+  <h2 class="header-font">Contact: </h2>
+  <div id="contact">
+    <div class="socials project-text">
+      <a class="social-links" href="#">Twitter</a>
+      <a class="social-links" href="#">Linkedin</a>
+      <a class="social-links" href="#">Github</a>
+    </div>
+    <div class="contact-form project-text">
+      <div class="capture-form">
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your name..">
+
+          <label for="email">Email: </label>
+          <input type="email" id="email" name="email" placeholder="Your email address..">
+
+          <label for="message">Message: </label>
+          <textarea id="message"></textarea>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
 
   </div>
 
-  <div id="projects" class="flex flex-row grid sm:grid-cols-4">
-
-
-    <a target="_blank" href="https://product-landing-page1.netlify.app">
-      <div class="flex justify-center mx-10 mt-20">
-        <div class="project-tile max-w-xs rounded shadow-lg my-2 border-4 border-blue-500">
-          <img class="w-full border-2 border-indigo-700" src="landing page project img.png">
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Tailwind CSS Page</div>
-
-          </div>
-        </div>
-      </div>
-    </a>
-
-    <a target="_blank" href="https://surveyform-page.netlify.app">
-      <div class="project-tile flex justify-center mx-10 mt-20">
-        <div class="max-w-xs rounded shadow-lg my-2 border-4 border-blue-500">
-          <img class="w-full border-2 border-indigo-700" src="survey-form-page.png">
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Survey Form Page</div>
-
-          </div>
-        </div>
-      </div>
-    </a>
-    <a target="_blank" href="https://brave-cori-65e6dd.netlify.app">
-      <div class="project-tile flex justify-center mx-10 mt-20 ">
-        <div class="max-w-xs rounded shadow-lg my-2 border-4 border-blue-500">
-          <img class="w-full border-2 border-indigo-700" src="portfoliopage.png">
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Portfolio Page</div>
-
-          </div>
-        </div>
-      </div>
-    </a>
-
-    <a target="_blank" href="https://productlanding-page.netlify.app">
-      <div class="project-tile flex justify-center mx-10 mt-20 ">
-        <div class="max-w-xs rounded shadow-lg my-2 border-4 border-blue-500">
-          <img class="w-full border-2 border-indigo-700" src="fcc_landingpage.png">
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Landing Page</div>
-
-          </div>
-        </div>
-      </div>
-    </a>
-
-  </div>
-  <div class="flex align-center my-8">
-    <form class="flex align-center flex-col mx-auto text-center" name="contact" method="POST" data-netlify="true">
-      <p>
-        <label>Your Name: </br><input class="border-gray-700 border-2 my-4" type="text" name="name" /></label>
-      </p>
-      <p>
-        <label>Your Email: </br><input class="border-gray-700 border-2 my-4" type="email" name="email" /></label>
-      </p>
-      <p>
-        <label>Message: </br> <textarea class="border-gray-700 border-2 my-4 px-4" name="message"></textarea></label>
-      </p>
-      <p>
-        <button
-          class="w-1/2 text-center bg-white border-blue-500 hover:bg-gray-300 border-2 border-solid hover:border-black"
-          type="submit">Send</button>
-      </p>
-    </form>
-  </div>
-
-
-
-
-  <footer id="footer" class="flex flex-col">
-    <a class="w-full text-center bg-white border-blue-500 hover:bg-gray-300 border-2 border-solid hover:border-black"
-      id=" profile-link" target="_blank" href="https://github.com/im-jessewellman">Github Profile</a>
-  </footer>
-
-
-
-  
 </body>
 
 </html>
