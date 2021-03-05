@@ -84,13 +84,13 @@
   <h2 class="header-font">Contact: </h2>
   <div id="contact">
     <div class="socials project-text">
-      <a class="social-links" href="#">Twitter</a>
-      <a class="social-links" href="#">Linkedin</a>
-      <a class="social-links" href="#">Github</a>
+      <a class="social-links" target="_blank" href="https://twitter.com/imjessewellman">Twitter</a>
+      <a class="social-links" target="_blank" href="https://www.linkedin.com/in/imjessewellman/">Linkedin</a>
+      <a class="social-links" target="_blank" href="https://github.com/im-jessewellman">Github</a>
     </div>
     <div class="contact-form project-text">
       <div class="capture-form">
-        <form>
+        <form name="message" method="POST" data-netlify="true">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" placeholder="Your name..">
 
@@ -98,7 +98,7 @@
           <input type="email" id="email" name="email" placeholder="Your email address..">
 
           <label for="message">Message: </label>
-          <textarea id="message"></textarea>
+          <textarea id="message" name="message"></textarea>
 
           <input type="submit" value="Submit">
         </form>
